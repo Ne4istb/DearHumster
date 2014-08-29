@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <string name="app_name">DearHamster</string>
+     <string name="title_section1">Наша свадьба</string>
+     <string name="title_section2">Детёныши</string>
+     <string name="title_section3">Миньоны</string>
+    <string name="app_title">Моему хомячку</string>
+    <!--<string name="app_title">Test</string>-->
+    <!--<string name="app_name">Test</string>-->
+    <!--<string name="title_section1">test 1</string>-->
+    <!--<string name="title_section2">test 2</string>-->
+    <!--<string name="title_section3">test 3</string>-->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="NotificationContent">Время поднять настроение=)</string>
+    <string name="love_you">Люблю тебя!</string>
+</resources>
