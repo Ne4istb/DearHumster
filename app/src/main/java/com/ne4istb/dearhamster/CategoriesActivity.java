@@ -1,8 +1,5 @@
 package com.ne4istb.dearhamster;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -17,13 +14,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.Calendar;
 import java.util.Locale;
 
 
 public class CategoriesActivity extends ActionBarActivity implements ActionBar.TabListener {
 
-    public static final String FIRST_RUN_PREFERENCE = "dearHamster.firstRun";
+    public static final String FIRST_RUN_PREFERENCE = "dearHamster.firstRunFlag";
 
     public static final String WEDDING_CATEGORY = "wedding";
     public static final String BEASTS_CATEGORY = "beasts";
@@ -73,10 +69,9 @@ public class CategoriesActivity extends ActionBarActivity implements ActionBar.T
 
         boolean firstRun = preference.getBoolean(FIRST_RUN_PREFERENCE, true);
 
-//        if (firstRun || UtilsHelper.DEBUG) {
         if (firstRun) {
 
-            new AlarmNotificationRegistrationService(this).Register();
+            new AlarmNotificationService(this).Register();
 
             preference.edit().putBoolean(FIRST_RUN_PREFERENCE, false).commit();
         }

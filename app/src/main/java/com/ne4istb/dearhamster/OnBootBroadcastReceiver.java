@@ -8,6 +8,6 @@ public class OnBootBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        new AlarmNotificationRegistrationService(context).Register();
+        new AlarmNotificationService(context).Register();
     }
 }

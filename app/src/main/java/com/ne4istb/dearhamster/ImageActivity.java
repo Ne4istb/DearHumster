@@ -35,10 +35,7 @@ public class ImageActivity extends ActionBarActivity {
         setContentView(R.layout.activity_image);
 
         final ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle(getString(R.string.app_title));
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#ffaa66cc"));
-        actionBar.setBackgroundDrawable(colorDrawable);
+        actionBar.hide();
 
         String category = getIntent().getStringExtra(CategoryFragment.ARG_CATEGORY_NAME);
         Integer position = getIntent().getIntExtra(CategoryFragment.ARG_IMAGE_POSITION, 0);
